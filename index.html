@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Протоколы передачи данных</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="logo">Протоколы данных</div>
+  </header>
+
+  <aside>
+    <nav>
+      <ul>
+        <li><a href="index.html">Введение</a></li>
+        <li><a href="protocols.html">Основные виды протоколов</a></li>
+        <li><a href="structure.html">Структура протоколов</a></li>
+        <li><a href="security.html">Безопасность протоколов</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <h1>Основы сетевых протоколов</h1>
+    
+    <dl>
+      <dt>Сетевой протокол</dt>
+      <dd>Набор правил, определяющих формат и порядок обмена данными между устройствами в сети.</dd>
+    </dl>
+
+    <dl class="fact">
+      <dt>Полезно знать</dt>
+      <dd>Протоколы обеспечивают совместимость оборудования разных производителей и стабильную работу интернета.</dd>
+    </dl>
+
+    <h2>TCP/IP</h2>
+    
+    <dl>
+      <dt>TCP/IP</dt>
+      <dd>Базовый стек протоколов интернета, включающий протоколы транспортного (TCP) и сетевого (IP) уровней.</dd>
+    </dl>
+
+    <dl class="fact">
+      <dt>Полезно знать</dt>
+      <dd>TCP гарантирует доставку данных, в то время как IP отвечает за маршрутизацию пакетов между узлами сети.</dd>
+    </dl>
+
+    <h2>HTTP</h2>
+    
+    <dl>
+      <dt>HTTP</dt>
+      <dd>HyperText Transfer Protocol — протокол прикладного уровня для передачи гипертекстовых документов.</dd>
+    </dl>
+  </main>
+
+  <footer>
+    <p>© 2024 Учебное пособие по протоколам передачи данных</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const sidebar = document.querySelector('aside');
+
+      menuToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
